@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://darkhell07648.github.io/top7-casino-site/sitemap.xml
