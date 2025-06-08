@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top 7 Online Casinos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .background-slideshow {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+    }
+
+    .background-slideshow img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .background-slideshow img.active {
+      opacity: 1;
+    }
+
+    .overlay {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    header.header {
+      padding: 100px 20px 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header-box {
+      background: rgba(0, 0, 0, 0.6);
+      border: 4px solid #00bfff;
+      border-radius: 20px;
+      padding: 20px 40px;
+      font-size: 3rem;
+      font-weight: bold;
+      color: gold;
+      text-transform: uppercase;
+      box-shadow: 0 0 20px #00bfff;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    .casino-entry {
+      background: rgba(0, 0, 0, 0.7);
+      border: 2px solid gold;
+      border-radius: 15px;
+      padding: 20px 30px;
+      margin: 20px;
+      text-align: center;
+      font-size: 1.5rem;
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .casino-entry:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    .casino-entry a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #111;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-slideshow">
+    <img src="images/photo_5291753915081155537_y.jpg" class="active">
+    <img src="images/1006240532ua_666ae6f41f1b4.webp">
+    <img src="images/1726579702625_1726579702625.webp">
+    <img src="images/17241438145491.webp">
+    <img src="images/casino.png">
+    <img src="images/kidpjdbulh7mdmriytwi.webp">
+  </div>
+  <div class="overlay"></div>
+
+  <header class="header">
+    <div class="header-box">Top 7 Online Casinos</div>
+  </header>
+
+  <main>
+    <div class="casino-entry"><a href="https://aeruborony.com/s318cccd9" target="_blank">1. daddy casino</a></div>
+    <div class="casino-entry"><a href="https://pamuatinat.xyz/saec6da3b" target="_blank">2. kent casino</a></div>
+    <div class="casino-entry"><a href="https://aristocratic-hall.com/sbee39b33" target="_blank">3. R7</a></div>
+    <div class="casino-entry"><a href="https://tropical-path.com/s9eb18ab7" target="_blank">4. cometacasino</a></div>
+    <div class="casino-entry"><a href="https://preesiader.com/s51fcbf25" target="_blank">5. gamacasino</a></div>
+    <div class="casino-entry"><a href="https://grid-cyberlane.com/sbadb5fac" target="_blank">6. arcadacasino</a></div>
+    <div class="casino-entry"><a href="https://www.catcasino440.com/ru/sign-up-2?tags=type-redirector%2Creg-short%2Ctemplate-regform%2Caction-no" target="_blank">7. catcasino</a></div>
+  </main>
+
+  <footer>
+    All casinos are licensed and time-tested, trusted by many players. Join, register, and be a winner!
+  </footer>
+
+  <script>
+    const slides = document.querySelectorAll('.background-slideshow img');
+    let index = 0;
+
+    setInterval(() => {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }, 5000);
+  </script>
+</body>
+</html>
